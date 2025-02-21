@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #01012e, #240019);
+    height: 100vh;
+}
+
+section {
+    background: url('/images/stars1.png');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section ul {
+    text-align: center;
+}
+
+section ul li {
+    margin: 14px 0;
+    list-style: none;
+}
+
+ul:hover li a {
+    opacity: 0;
+}
+
+section ul li a {
+    background: darkblue;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+section ul li a:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+ul li:after {
+    content: attr(data-text);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    letter-spacing: 50px;
+    transition: letter-spacing 0.5s;
+}
+
+ul li:hover:after {
+    opacity: 0.5;
+    letter-spacing: 5px;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        font-size: 60px;
+    }
+    50% {
+        font-size: 80px;
+
+    }
+    100% {
+        font-size: 60px;
+    }
+}
+
+ul li::before {
+    content: '';
+    width: 180px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: 0 0 80px orangered;
+    opacity: 0;
+}
+
+ul li:hover::before {
+    opacity: 0.9;
+    width: 80px;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    ul li:after {
+        font-size: 40px; /* Adjust text size for smaller screens */
+        letter-spacing: 20px;
+    }
+
+    section ul li a {
+        font-size: 16px; /* Smaller font for better readability on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    ul li:after {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    section ul li a {
+        font-size: 14px;
+        padding: 4px 10px; /* Adjust padding for smaller screens */
+    }
+}

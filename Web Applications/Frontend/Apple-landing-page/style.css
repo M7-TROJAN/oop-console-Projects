@@ -1,0 +1,198 @@
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --hover-color: #c82525;
+    --font-family: Arial, sans-serif;
+    --button-padding: 8px 15px;
+    --header-padding: 20px 0;
+    --main-width: 80%;
+    --text-width: 40%;
+    --image-width: 30%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* header style*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--main-width);
+    margin: auto;
+    padding: var(--header-padding);
+}
+
+.logo {
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* main style*/
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--main-width);
+    margin: auto;
+}
+
+main .text {
+    width: var(--text-width);
+    color: var(--secondary-color);
+}
+
+main .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main .text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+button.primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: var(--button-padding);
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+main .image {
+    width: var(--image-width);
+}
+
+main .image img {
+    width: 180px;
+}
+
+/* Hover effect for the main image */
+.main-image:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+/* footer style*/
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+footer img {
+    width: 40px;
+    margin: 0 5px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    color: var(--secondary-color);
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Added padding to ensure spacing around the content */
+    }
+
+    main .text {
+        width: 90%; /* Reduced width to provide some margin on small screens */
+        text-align: left; /* Keep the text aligned to the left for better readability */
+        margin-bottom: 20px; /* Added margin to separate text from the image */
+    }
+
+    main .image {
+        width: 50%; /* Set a more reasonable width for the image section */
+        text-align: center; /* Center the image in the container */
+    }
+
+    main .image img {
+        width: 100%; /* Ensure the image scales properly within its container */
+        max-width: 300px; /* Set a max width to prevent the image from becoming too large */
+    }
+
+    footer {
+        margin-top: 20px; /* Adjust margin for small screens */
+        padding-bottom: 20px; /* Add padding to avoid footer content touching the bottom edge */
+        position: static; /* Reset the position to static for proper flow in the document */
+        transform: none; /* Reset the transform property */
+    }
+}

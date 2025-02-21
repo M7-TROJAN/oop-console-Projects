@@ -1,0 +1,254 @@
+/* General reset and font styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles: Background gradient and centering content */
+body {
+    background: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necessary for the body::after pseudo-element */
+}
+
+/* Decorative background effect using a circular clip-path */
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70%);
+}
+
+/* Container for all content: Setting dimensions, background transparency, and box shadow */
+.container {
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Navbar styles: Flexbox for alignment and spacing */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Logo styling */
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* Navbar list items styling */
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+/* Navbar links styling */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Navbar link hover effect */
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main content section: Flexbox layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+/* Text section styling */
+.content .text {
+    width: 40%;
+    color: #fff;
+}
+
+/* Headline styling */
+.content .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Paragraph text styling */
+div .text p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+/* Image container styling */
+.content .image {
+    width: 40%;
+}
+
+/* Image sizing */
+.content .image img {
+    width: 400px;
+}
+
+/* Hover effect for the image */
+.container .content .image img:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+/* Responsive design media queries */
+
+/* Tablet view adjustments (950px - 1255px) */
+@media (min-width: 950px) and (max-width: 1255px) {
+    .container .content .image img {
+        width: 330px;
+    }
+
+    .content .text h2 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile-first adjustments for devices less than 950px wide */
+@media (max-width: 950px) {
+    .content, nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .logo {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* Ensures the text and image sections use full width on smaller screens */
+    .content .text, .content .image {
+        width: 100%;
+    }
+
+    .content .text h2 {
+        font-size: 35px;
+    }
+
+    .content .image img {
+        width: 100%;
+    }
+
+    /* Adjust the decorative background effect for smaller screens */
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+}
+
+/* Extra small screens (600px and below) adjustments */
+@media (max-width: 600px) {
+    .content .text h2 {
+        font-size: 30px; /* Slightly smaller font size */
+    }
+
+    .content .image img {
+        width: 100%; /* Ensure image scales properly */
+    }
+
+    /* Further adjusts the decorative background effect for extra small screens */
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+
+    nav .logo {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Extra small screens (400px and below) adjustments */
+@media (max-width: 400px) {
+
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .content .text h2 {
+        font-size: 25px; /* Slightly smaller font size */
+    }
+
+    .content .image img {
+        width: 100%; /* Ensure image scales properly */
+    }
+
+    /* Further adjusts the decorative background effect for extra small screens */
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+
+    nav .logo {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
