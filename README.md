@@ -21,8 +21,8 @@ Below is an outline of the folder structure for easy navigation:
 ```
 My-Dev-Projects/
 ├── Console Applications/
-│   ├── [Project 1]
-│   └── [Project 2]
+│   ├── [FreePalestine]
+│   └── [ProgrammingTest]
 │
 └── Web Applications/
     ├── Frontend/
