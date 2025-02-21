@@ -26,8 +26,8 @@ My-Dev-Projects/
 │
 └── Web Applications/
     ├── Frontend/
-    │   ├── [Project 1]
-    │   └── [Project 2]
+    │   ├── [Hospital]
+    │   └── [Todo list app]
     │
     └── NET Core Projects/
         ├── NET Core API/
@@ -35,8 +35,8 @@ My-Dev-Projects/
         │   └── [Project 2]
         |
         └── NET Core MVC/
-            ├── [Project 1]
-            └── [Project 2]
+            ├── [LitraLand]
+            └── [Bazario E-Commerce]
 ```
 
 ## Getting Started
