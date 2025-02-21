@@ -1,6 +1,6 @@
-# C++ Programming Language Projects
+# Console Applications Projects
 
-Welcome to my repository showcasing a collection of diverse C++ programming projects developed during my training journey. Each project serves as a demonstration of my proficiency in C++ programming concepts and software development practices. These projects are designed to provide insight into logical problem-solving, algorithmic thinking, and effective coding practices.
+Welcome to my repository showcasing a collection of diverse C++ and C# programming projects developed during my training journey. Each project serves as a demonstration of my proficiency in C++ programming concepts and software development practices. These projects are designed to provide insight into logical problem-solving, algorithmic thinking, and effective coding practices.
 
 ## Project List
 
