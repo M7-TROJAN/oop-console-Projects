@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakat Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zakat Calculator</h1>
+    <div class="form-group">
+      <label for="amount"> Enter Your Amount (in Currency): </label>
+      <input type="number" id="amount" placeholder="Enter Your Amount">
+    </div>
+    <div class="form-group">
+      <label for="goldPrice"> Gold Price Per Gram: </label>
+      <input type="number" id="gold-price" placeholder="Enter Price of Gold Per Gram">
+    </div>
+    <button onclick="calculateZakat()"> Calculate Zakat</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
