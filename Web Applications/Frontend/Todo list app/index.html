@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <script 
+    src="https://kit.fontawesome.com/c1e47baf7d.js" crossorigin="anonymous">
+  </script>
+  <!-- favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="todo-list">
+        <div class="title">
+          <h1>Todo List</h1>
+          <img src="images/to-do-list.png" alt="todo-list">
+        </div>
+        <div class="row">
+          <input type="text" id="input-task" placeholder="Add a new task">
+          <button class="btn add-btn">Add</button>
+        </div>
+        <ul id="task-list">
+          <!-- we will handle this part with JavaScript -->
+        </ul>
+        <div class="delete">
+          <button class="btn dele-btn dele-checked">
+            delete checked
+          </button>
+          <button class="btn dele-btn dele-all">
+            delete All
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+

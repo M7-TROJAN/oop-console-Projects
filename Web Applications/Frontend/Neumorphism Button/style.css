@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededff;
+}
+
+button {
+    color: #5e52e2;
+    padding: 20px 50px;
+    font-size: 30px;
+    background-color: #ededff;
+    border: none;
+    font-weight: bold;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(13, 0, 255, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: inset -5px -5px 12px #ffffff, inset 5px 5px 12px rgba(13, 0, 255, 0.253);
+}

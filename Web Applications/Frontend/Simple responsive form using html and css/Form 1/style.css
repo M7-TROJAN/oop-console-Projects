@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003;
+
+    /* Center the form horizontally and vertically using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Make the height of the body fill the viewport */
+    height: 100vh;
+}
+
+/* Styling for the form container */
+form {
+    background-color: #0000889f;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+    /* Make the form take 80% of the viewport's width */
+    width: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: column;
+}
+
+/* Styling for the form input fields */
+form input {
+    background-color: #0000aaa0;
+
+    /* Remove the default border and the default outline */
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+
+    /* Add margin below each input for spacing */
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+
+    /*a smooth effect for transformations */
+    transition: transform 0.3s;
+}
+
+/* Styling for the form submit button */
+form button {
+    padding: 10px;
+    border: none; /* Remove the default border */
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: #333;
+}
+
+
+input:hover {
+    transform: scale(1.07);
+}
+
+/* Media query for screens larger than 768px */
+@media (min-width: 768px) {
+    form {
+        /* On larger screens, make the form width 35% */
+        width: 35%;
+    }
+}

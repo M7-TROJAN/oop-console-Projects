@@ -1,0 +1,240 @@
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #001;
+    display: flex;
+    width: 100%;
+}
+
+/* Profile image styling */
+.profile .img-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile .img-box img {
+    width: 100%;
+}
+
+/* Profile text styling */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* Sidebar menu styling */
+.menu {
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: width 0.7s;
+}
+
+.menu:hover {
+    width: 360px;
+}
+
+/* Sidebar menu list styling */
+.menu ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+/* Sidebar menu links styling */
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: background-color 0.5s;
+}
+
+/* Hover and active states for menu items */
+.menu ul li a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+    background-color: #456;
+}
+
+/* Icon color change on hover */
+.menu ul li a:hover i {
+    color: green;
+}
+
+/* Log out button styling */
+.menu ul .log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu ul .log-out a {
+    background-color: #f00;
+}
+
+.menu ul .log-out a:hover {
+    background-color: #f55;
+    transform: scale(1.1);
+}
+
+/* Emoji appearance on hover */
+.menu ul .log-out p::after {
+    content: '🥹';
+    position: absolute;
+    left: 80%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.menu ul .log-out a:hover p::after {
+    opacity: 1;
+}
+
+/* Icon size in menu */
+.menu ul li a i {
+    font-size: 30px;
+}
+
+/* Main content section */
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+/* Titles in content sections */
+.title-info,
+.Products-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #0481ff;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Data info boxes */
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.data-info .box i {
+    font-size: 40px;
+    transition: color 0.5s;
+}
+
+/* Box content alignment */
+.data-info .box .info {
+    text-align: center;
+}
+
+/* Data stats */
+.data-info .box .info span {
+    display: block;
+    font-size: 30px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+/* Table cells and headers */
+table th,
+table td {
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+
+/* Table header styling */
+table th {
+    background-color: #0481ff;
+}
+
+/* Price and count styling */
+.price,
+.count {
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.price {
+    background-color: green;
+}
+
+.count {
+    background-color: gold;
+    color: black;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    .menu ul li a i {
+        font-size: 24px;
+    }
+
+    .data-info .box {
+        height: 100px;
+        flex-basis: 100px;
+    }
+
+    .data-info .box i {
+        font-size: 30px;
+    }
+
+    .data-info .box .info span {
+        font-size: 24px;
+    }
+    .menu:hover {
+        width: 100%;
+    }
+}
