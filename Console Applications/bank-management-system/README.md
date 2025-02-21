@@ -130,8 +130,8 @@ Here are some screenshots of the Bank Management System in action:
 2. [Transactions](screenshots/10_Transactions.png)
    ![Transactions](screenshots/10_Transactions.png)
    
-3. [Manage Users](screenshots/11_Manage_Users.png)
-   ![Manage Users](screenshots/11_Manage_Users.png)
+3. [Manage Users](screenshots/11_Mange_Users.png)
+   ![Manage Users](screenshots/11_Mange_Users.png)
 
 And many more screenshots are available in the [screenshots](screenshots/) directory.
 
