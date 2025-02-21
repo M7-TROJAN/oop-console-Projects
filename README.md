@@ -55,9 +55,15 @@ Contributions and feedback are welcome! If you have any ideas for improvements o
 ## Contact
 
 For any inquiries or further information, please reach out via:
-- **Email:** [Your Email Address]
-- **GitHub:** [Your GitHub Profile Link]
-- **LinkedIn:** [Your LinkedIn Profile Link]
+
+- Email: [mahmoud.abdalaziz@outlook.com](mailto:mahmoud.abdalaziz@outlook.com)
+- LinkedIn: [Mahmoud Mohamed Abdalaziz](https://www.linkedin.com/in/mahmoud-mohamed-abd/)
+
+[![LinkedIn](https://img.shields.io/badge/-Mahmoud%20Mohamed-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoud-mohamed-abd/)
+[![WhatsApp](https://img.shields.io/badge/-Mahmoud%20Mohamed-0077B5?style=for-the-badge&logo=WhatsApp&logoColor=white)](https://wa.link/nx3m8s)
+[![Telegram](https://img.shields.io/badge/-Mahmoud%20Mohamed-0077B5?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/mattar74)
+
+Feel free to reach out if you have any inquiries or want to connect!
 
 ---
 
