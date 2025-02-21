@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to right, #01022d, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.container {
+    background-image: 
+        linear-gradient(to right, #01022de5 30%, #00000088),
+        url('images/bg.webp');
+    background-size:cover;
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+
+    background-image: 
+        linear-gradient(to right, #01022de5 30%, transparent),
+        url('images/bg.webp');
+    background-size:cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li a {
+    border-bottom: 2px solid transparent;
+}
+
+ul li a:hover {
+    border-bottom-color: #fff;
+}
+
+main {
+    width: 50%;
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+main h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+main h2:hover {
+    color: #00e6ff;
+    transform: scale(1.1);
+    animation: soft-glow 2s infinite ease-in-out;
+}
+
+@keyframes soft-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px #00e6ff, 
+            0 0 20px #00e6ff, 
+            0 0 30px #00b3ff, 
+            0 0 40px #0080ff, 
+            0 0 50px #0066cc, 
+            0 0 60px #004d99, 
+            0 0 70px #003366;
+    }
+    50% {
+        text-shadow: 
+            0 0 15px #00ffff, 
+            0 0 25px #00d4ff, 
+            0 0 35px #00b3ff, 
+            0 0 45px #0080ff, 
+            0 0 55px #0066cc, 
+            0 0 65px #004d99, 
+            0 0 80px #003366;
+    }
+}
+
+
+main p {
+    font-size: 20px;
+    width: 400px;
+    letter-spacing: 2px;
+}
+
+main button {
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main button:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    main {
+        width: 80%;
+        margin-top: 200px;
+    }
+
+    main h2 {
+        font-size: 50px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    main p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    main button {
+        padding: 10px 15px;
+        margin: 20px 0;
+    }
+}

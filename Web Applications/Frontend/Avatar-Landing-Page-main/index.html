@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">Avatar</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Clans</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2 id="main-heading">Avatar</h2>
+            
+            <p>
+                Explore the breathtaking world of Pandora with immersive experiences that bring you closer to the Na'vi.
+                Discover the unique bond between nature and technology, and join the adventure that has captivated audiences worldwide.
+            </p>
+            <button>Join</button>
+        </main>
+    </div>
+
+    <script>
+        // Select the h2 element
+        const heading = document.getElementById("main-heading");
+
+        // Store the original text content
+        const originalText = heading.textContent;
+        const hoverText = "Aurora";
+
+        // Add event listener for mouse hover
+        heading.addEventListener("mouseenter", () => {
+            heading.textContent = hoverText;
+        });
+
+        // Add event listener to revert text on mouse leave
+        heading.addEventListener("mouseleave", () => {
+            heading.textContent = originalText;
+        });
+    </script>
+</body>
+</html>
